@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Wedding | 24th May 2025</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #fff8e1; }
+        nav { background: #f4a261; padding: 15px; }
+        nav a { color: white; text-decoration: none; margin: 15px; font-size: 18px; }
+        .container { padding: 20px; }
+        .hidden { display: none; }
+        h1 { color: #d2691e; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('schedule')">Schedule</a>
+        <a href="#" onclick="showPage('gallery')">Gallery</a>
+        <a href="#" onclick="showPage('rsvp')">RSVP</a>
+        <a href="#" onclick="showPage('contact')">Contact</a>
+    </nav>
+    
+    <div id="home" class="container">
+        <h1>Welcome to Our Wedding</h1>
+        <p>Join us in celebrating our love on 24th May 2025!</p>
+    </div>
+    
+    <div id="schedule" class="container hidden">
+        <h1>Wedding Schedule</h1>
+        <p><strong>Mehndi:</strong> 6 PM | Respective Homes</p>
+        <p><strong>Haldi:</strong> 6 PM | Resort</p>
+        <p><strong>Sangeet:</strong> 9 PM | Resort</p>
+        <p><strong>Wedding:</strong> 9 AM | Resort</p>
+        <p><strong>Reception:</strong> 7:30 PM | Resort</p>
+    </div>
+    
+    <div id="gallery" class="container hidden">
+        <h1>Gallery</h1>
+        <p>Coming Soon!</p>
+    </div>
+    
+    <div id="rsvp" class="container hidden">
+        <h1>RSVP</h1>
+        <p>Let us know if you'll be joining!</p>
+    </div>
+    
+    <div id="contact" class="container hidden">
+        <h1>Contact & Venue</h1>
+        <p>Location: Resort, Maharashtra</p>
+        <p>Contact: +91 XXXXXXXXXX</p>
+    </div>
+    
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.container').forEach(page => page.classList.add('hidden'));
+            document.getElementById(pageId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
